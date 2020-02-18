@@ -11,12 +11,17 @@ class problem_2:
         sum = 0
         num1 = 1
         num2 = 2
-        while(num2 1= self.max_num):
-        
+        while(num2 < self.max_num):
+            if num2 % 2 == 0:
+                sum = sum + num2
+            saved = num2
+            num2 = num1 + num2
+            num1 = saved
+            # print(str(num1) + " " + str(num2))
         print(sum)
 
         
 if __name__ == "__main__":
     p1 = problem_2(4000000, 2)
-    p1.calculate_multpiples_sum()
+    p1.calculate_fibonacci_sum()
 
