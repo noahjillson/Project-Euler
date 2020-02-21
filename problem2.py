@@ -24,4 +24,5 @@ class problem_2:
 if __name__ == "__main__":
     p1 = problem_2(4000000, 2)
     p1.calculate_fibonacci_sum()
+    print("hello world")
 
